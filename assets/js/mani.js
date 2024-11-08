@@ -1,9 +1,9 @@
 $(document).ready(function(){
     $('.product-slider').slick({
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       infinite: true,
-      dots: false, // Ẩn chấm điều hướng
+      dots: false,
       arrows: true,
       prevArrow: '<button type="button" class="slick-prev"><i class="fas fa-chevron-left"></i></button>',
       nextArrow: '<button type="button" class="slick-next"><i class="fas fa-chevron-right"></i></button>',
