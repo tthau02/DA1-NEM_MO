@@ -37,13 +37,15 @@
                         <button type="reset" class="btn btn-secondary text-light">Nhập lại</button>
                         <a href="?act=list-category" class="btn btn-info text-light">Danh sách</a>
 
-                        <?php
-                            if (isset($_GET['message'])) {
-                                echo '<div class="alert alert-success mt-3" role="alert">' . htmlspecialchars($_GET['message']) . '</div>';
-                            } elseif (isset($_GET['error'])) {
-                                echo '<div class="alert alert-danger mt-3" role="alert">' . htmlspecialchars($_GET['error']) . '</div>';
-                            }
-                        ?>
+                        <?php if (isset($successMessage)): ?>
+                            <div class="alert alert-success mt-3" role="alert">
+                                <?= htmlspecialchars($successMessage); ?>
+                            </div>
+                        <?php elseif (isset($errorMessage)): ?>
+                            <div class="alert alert-danger mt-3" role="alert">
+                                <?= htmlspecialchars($errorMessage); ?>
+                            </div>
+                        <?php endif; ?>
                     </form>
 
                 </div>

@@ -37,12 +37,9 @@ class CategoryController {
     
             $result = $this->categoryQuery->addCategory($category);
             if ($result == "ok") {
-                $successMessage = "Tạo mới sản phẩm thành công!";
-                header("Location: ?act=list-category&message=" . urlencode($successMessage)); 
-                exit;
+                $successMessage = "Cập nhật danh mục thành công!";
             } else {
-                $errorMessage = "Tạo mới sản phẩm thất bại. Mời nhập lại.";
-                exit;
+                $errorMessage = "Cập nhật danh mục thất bại. Mời nhập lại.";
             }
         }
     
@@ -88,13 +85,9 @@ class CategoryController {
             $result = $this->categoryQuery->updateCategory($category);
     
             if ($result == "ok") {
-                $successMessage = "Cập nhật sản phẩm thành công!";
-                header("Location: ?act=list-category&message=" . urlencode($successMessage));
-                exit;
+                $successMessage = "Cập nhật danh mục thành công!";
             } else {
-                $errorMessage = "Cập nhật sản phẩm thất bại. Mời nhập lại.";
-                header("Location: ?act=update-category&id=$id&error=" . urlencode($errorMessage));
-                exit;
+                $errorMessage = "Cập nhật danh mục thất bại. Mời nhập lại.";
             }
         }
     
