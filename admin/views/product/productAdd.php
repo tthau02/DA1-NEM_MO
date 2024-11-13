@@ -49,6 +49,7 @@
                         foreach ($categoryList as $cate) {
                             // Truy cập thuộc tính của đối tượng $cate
                             echo "<option value='$cate->categorie_id'>$cate->categorie_name</option>";
+                             
                         }
                         ?>
                     </select>
