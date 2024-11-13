@@ -22,7 +22,7 @@
                 $product->product_price=$_POST["product_price"];
                 $product->product_description = trim($_POST["productDesc"]);
                 
-                $product->product_id=$_POST["product_id"];
+                $product->product_id=$_POST["product_id"];   
                 
         
                 if (isset($_FILES["productImage"]) && $_FILES["productImage"]["error"] == 0) {
@@ -62,7 +62,7 @@
                 }else{
                     echo "Xoa that bai";
                 }
-            }
+            }   
         }
     
         public function update($id) {
