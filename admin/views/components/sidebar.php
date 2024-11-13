@@ -41,7 +41,7 @@
                             <a href="?act=list-category" class="sidebar-link">Danh Mục Sản Phẩm</a>
                         </li>
                         <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Danh Sách Sản Phẩm</a>
+                            <a href="?act=list-product" class="sidebar-link">Danh Sách Sản Phẩm</a>
                         </li>
                     </ul>
                 </li>

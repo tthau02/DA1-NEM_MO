@@ -6,6 +6,11 @@
     require_once "models/Category.php";
     require_once "models/CategoryQuery.php";
 
+    require_once "models/Product.php";
+    require_once "models/ProductQuery.php";
+    require_once "controllers/ProductController.php";
+    
+
     $act = $_GET["act"] ?? "";
     $id = $_GET["id"] ?? "";
 
@@ -15,5 +20,10 @@
         'add-category' => (new CategoryController())->add(),
         'delete-cate' => (new CategoryController())->delete($id),
         'update-cate' => (new CategoryController())->update($id),
+
+        'list-product' => (new ProductController())->list(),
+        'add-product' => (new ProductController())->add(),
+        'delete-product' => (new ProductController())->delete($id),
+        'update-product' => (new ProductController())->update($id),
     };
 ?>
