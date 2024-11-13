@@ -62,7 +62,7 @@
                 }else{
                     echo "Xoa that bai";
                 }
-            }
+            }   
         }
     
         public function update($id) {
