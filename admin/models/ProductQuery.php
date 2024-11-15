@@ -39,7 +39,7 @@
         
                 $sql = "INSERT INTO `products` (`product_id`, `product_name`, `product_image`, `product_price`, `product_description`,`categorie_id`) 
                         VALUES (NULL, '$product->product_name', '$product->product_image', '$product_price', '$product->product_description',$product->categorie_id)";
-                        
+                echo $product->categorie_id;
                 $data = $this->pdo->exec($sql);
                 
                 if($data == 1){
