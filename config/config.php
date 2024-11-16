@@ -9,7 +9,7 @@ function connect_DB() {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "da1_nem_mo";
+    $dbname = "du_an-1";
 
     try {
         $conn = new PDO("mysql:host=$servername;dbname=$dbname;charset=utf8", $username, $password);
